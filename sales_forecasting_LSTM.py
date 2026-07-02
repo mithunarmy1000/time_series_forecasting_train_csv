@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 import matplotlib.pyplot as plt
 
 # ------------------ Load Data ------------------
-path=r"C:\Users\DELL\Downloads\train.csv\train.csv"
+path=r"C:\Users\DELL\Downloads\train.csv\train.csv" #use train.csv file in repository
 df=pd.read_csv(path)
 df = df[df["store_nbr"] == 1]                  # One store
 df = df.groupby("date")["sales"].sum().reset_index()
